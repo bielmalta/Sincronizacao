@@ -1,0 +1,64 @@
+Script started on 2026-10-29 15:44:16-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="180" LINES="11"]
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ date
+[?2004lThu Oct 29 15:44:20 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ whoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ pwd
+[?2004l/home/bielmalta/Sincronizacao
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -pthread -c sync_car.c -o sync_car.o
+gcc sync_car.o -o sync_car -pthread
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:2: sync_car] Error 1
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ [7mmake sync_car.o[27mmake sync_car.o
+[?2004lmake: 'sync_car.o' is up to date.
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ make clean
+[?2004lrm -f sync_car.o sync_car
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ [K]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ [K]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ cat evidencias.log
+[?2004l[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ exit
+[?2004lexit
+
+Script done on 2026-10-29 16:23:43-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-10-29 16:24:09-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="179" LINES="11"]
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ date
+[?2004lThu Oct 29 16:24:13 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ whoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ pwd
+[?2004l/home/bielmalta/Sincronizacao
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ [7mmake sync_car.o[27mmake sync_car.o
+[?2004lgcc -Wall -Wextra -std=c11 -pthread -c sync_car.c -o sync_car.o
+[01m[Ksync_car.c:[m[K In function ‘[01m[Kstation_on_board[m[K’:
+[01m[Ksync_car.c:39:31:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 1 of ‘[01m[Kpthread_mutex_lock[m[K’
+   39 |     pthread_mutex_lock([01;31m[Kstation->mutex[m[K);
+      |                        [01;31m[K~~~~~~~^~~~~~~[m[K
+      |                               [01;31m[K|[m[K
+      |                               [01;31m[Kpthread_mutex_t[m[K
+In file included from [01m[Ksync_car.c:1[m[K:
+[01m[K/usr/include/pthread.h:794:49:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_mutex_t *[m[K’ but argument is of type ‘[01m[Kpthread_mutex_t[m[K’
+  794 | extern int pthread_mutex_lock ([01;36m[Kpthread_mutex_t *__mutex[m[K)
+      |                                [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[Ksync_car.c:44:36:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 1 of ‘[01m[Kpthread_cond_signal[m[K’
+   44 |         pthread_cond_signal([01;31m[Kstation->vagao[m[K);
+      |                             [01;31m[K~~~~~~~^~~~~~~[m[K
+      |                                    [01;31m[K|[m[K
+      |                                    [01;31m[Kpthread_cond_t[m[K
+[01m[K/usr/include/pthread.h:1121:49:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_cond_t *[m[K’ but argument is of type ‘[01m[Kpthread_cond_t[m[K’
+ 1121 | extern int pthread_cond_signal ([01;36m[Kpthread_cond_t *__cond[m[K)
+      |                                 [01;36m[K~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[Ksync_car.c:47:33:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 1 of ‘[01m[Kpthread_mutex_unlock[m[K’
+   47 |     pthread_mutex_unlock([01;31m[Kstation->mutex[m[K);
+      |                          [01;31m[K~~~~~~~^~~~~~~[m[K
+      |                                 [01;31m[K|[m[K
+      |                                 [01;31m[Kpthread_mutex_t[m[K
+[01m[K/usr/include/pthread.h:835:51:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_mutex_t *[m[K’ but argument is of type ‘[01m[Kpthread_mutex_t[m[K’
+  835 | extern int pthread_mutex_unlock ([01;36m[Kpthread_mutex_t *__mutex[m[K)
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+make: *** [makefile:5: sync_car.o] Error 1
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ [7mmake sync_car.o[27mmake sync_car.o
+[?2004lgcc -Wall -Wextra -std=c11 -pthread -c sync_car.c -o sync_car.o
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ make clean
+[?2004lrm -f sync_car.o sync_car
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ 
