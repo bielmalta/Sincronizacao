@@ -61,4 +61,8 @@ make: *** [makefile:5: sync_car.o] Error 1
 [?2004lgcc -Wall -Wextra -std=c11 -pthread -c sync_car.c -o sync_car.o
 [?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ make clean
 [?2004lrm -f sync_car.o sync_car
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ make sync_car.o
+[?2004lgcc -Wall -Wextra -std=c11 -pthread -c sync_car.c -o sync_car.o
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ make clena[K[Kan
+[?2004lrm -f sync_car.o sync_car
 [?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ 
