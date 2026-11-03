@@ -65,4 +65,13 @@ make: *** [makefile:5: sync_car.o] Error 1
 [?2004lgcc -Wall -Wextra -std=c11 -pthread -c sync_car.c -o sync_car.o
 [?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ make clena[K[Kan
 [?2004lrm -f sync_car.o sync_car
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ [?2004l
+exit
+Script started on 2026-11-03 11:19:45-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="180" LINES="11"]
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ date
+[?2004lTue Nov  3 11:19:49 -03 2026
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ whoami
+[?2004lbielmalta
+[?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ pwd
+[?2004l/home/bielmalta/Sincronizacao
 [?2004h]0;bielmalta@AlienGabriel: ~/Sincronizacao[01;32mbielmalta@AlienGabriel[00m:[01;34m~/Sincronizacao[00m$ 
