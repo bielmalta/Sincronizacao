@@ -1,14 +1,4 @@
-#include <pthread.h>
-
-typedef struct station {
-    pthread_mutex_t mutex;
-    pthread_cond_t passageiros;
-    pthread_cond_t vagao;
-
-    int esperando;
-    int assentos;
-    int embarcando;
-}station;
+#include "sync_car.h"
 
 void station_init(struct station *station) {
     pthread_mutex_init(&station->mutex, NULL);
